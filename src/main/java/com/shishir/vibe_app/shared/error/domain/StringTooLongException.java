@@ -13,7 +13,7 @@ public final class StringTooLongException extends AssertionException {
         currentLength = String.valueOf(builder.value.length());
     }
 
-    public static StringTooLongExceptionBuilder builder() {
+    static StringTooLongExceptionBuilder builder() {
         return new StringTooLongExceptionBuilder();
     }
 
