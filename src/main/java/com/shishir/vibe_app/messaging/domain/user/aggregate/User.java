@@ -2,12 +2,15 @@ package com.shishir.vibe_app.messaging.domain.user.aggregate;
 
 import com.shishir.vibe_app.messaging.domain.user.vo.*;
 import com.shishir.vibe_app.shared.error.domain.Assert;
+import com.shishir.vibe_app.messaging.domain.user.aggregate.UserBuilder;
+import com.shishir.vibe_app.messaging.domain.user.aggregate.AuthorityBuilder;
 import org.jilt.Builder;
 
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Builder
 public class User {
@@ -77,9 +80,9 @@ public class User {
         }
 
         if (attributes.containsKey("given_name")) {
-            userBuilder.firstname(new UserFirstName(attributes.get("given_name").toString()));
+            userBuilder.firstName(new UserFirstName(attributes.get("given_name").toString()));
         } else if (attributes.containsKey("nickname")) {
-            userBuilder.firstname(new UserFirstName(attributes.get("nickname").toString()));
+            userBuilder.firstName(new UserFirstName(attributes.get("nickname").toString()));
         }
 
         if (attributes.containsKey("family_name")) {

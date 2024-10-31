@@ -1,4 +1,10 @@
 package com.shishir.vibe_app.messaging.domain.user.vo;
 
-public class UserLastName {
+import com.shishir.vibe_app.shared.error.domain.Assert;
+
+public record UserLastName(String value) {
+
+    public UserLastName {
+        Assert.field(value, value).maxLength(255);
+    }
 }
