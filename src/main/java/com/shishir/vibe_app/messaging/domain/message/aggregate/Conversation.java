@@ -2,6 +2,7 @@ package com.shishir.vibe_app.messaging.domain.message.aggregate;
 
 import com.shishir.vibe_app.messaging.domain.message.vo.ConversationName;
 import com.shishir.vibe_app.messaging.domain.message.vo.ConversationPublicId;
+import com.shishir.vibe_app.messaging.domain.user.aggregate.User;
 import com.shishir.vibe_app.shared.error.domain.Assert;
 import org.jilt.Builder;
 
