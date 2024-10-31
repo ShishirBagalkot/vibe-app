@@ -3,6 +3,7 @@ package com.shishir.vibe_app.infrastructure.secondary.repository;
 import com.shishir.vibe_app.infrastructure.secondary.entity.UserEntity;
 import com.shishir.vibe_app.messaging.domain.message.vo.ConversationPublicId;
 import com.shishir.vibe_app.messaging.domain.user.aggregate.User;
+import com.shishir.vibe_app.messaging.domain.user.repository.UserRepository;
 import com.shishir.vibe_app.messaging.domain.user.vo.UserEmail;
 import com.shishir.vibe_app.messaging.domain.user.vo.UserPublicId;
 import org.springframework.data.domain.Page;
